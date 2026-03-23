@@ -1,0 +1,1 @@
+"""Backend package for Brick By Brick (FastAPI)."""

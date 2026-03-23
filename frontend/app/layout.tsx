@@ -1,15 +1,17 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import React from 'react'
 
 export const metadata: Metadata = {
-  title: 'Building Blocks',
-  description: 'Rebuild your identity, piece by piece',
+  title: 'Brick By Brick',
+  description: 'Reality-to-brick UI scaffold',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning>{children}</body>
+      <body>{children}</body>
     </html>
   )
 }
+

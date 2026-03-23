@@ -1,5 +1,6 @@
 /**
- * Placeholder for PDF export — wire jspdf/html2canvas or a server route when needed.
+ * Placeholder for PDF export.
+ * Replace with your jsPDF/html2canvas implementation later.
  */
 export async function downloadLegoPDF(_opts: {
   projectName: string
@@ -12,3 +13,4 @@ export async function downloadLegoPDF(_opts: {
     window.print()
   }
 }
+
