@@ -1,0 +1,11 @@
+# Environment and secrets — never commit real keys
+.env
+.env.*
+!.env.example
+!.env*.example
+*.bak
+*.pem
+*.key
+
+# OS / editor
+.DS_Store
