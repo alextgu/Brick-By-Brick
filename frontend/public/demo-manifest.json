@@ -1,0 +1,10 @@
+{
+  "manifest_version": "1",
+  "total_bricks": 4,
+  "bricks": [
+    { "part_id": "3001", "position": [0, 0, 0], "rotation": 0, "color_id": 4 },
+    { "part_id": "3001", "position": [4, 0, 0], "rotation": 0, "color_id": 4 },
+    { "part_id": "3003", "position": [8, 0, 0], "rotation": 0, "color_id": 1 },
+    { "part_id": "3004", "position": [0, 0, 1], "rotation": 0, "color_id": 15 }
+  ]
+}

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, type ComponentProps } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import InstructionBook from './InstructionBook';
 
@@ -138,7 +138,7 @@ const demoManualData = {
     3: "Upper walls",
     4: "Roof/top finish"
   }
-};
+} as ComponentProps<typeof InstructionBook>['manual'];
 
 const demoPieceCount = {
   total_pieces: 12,
@@ -148,8 +148,11 @@ const demoPieceCount = {
     { part_id: "3003", color_id: 1, quantity: 3, piece_name: "Brick 2x2" },
     { part_id: "3004", color_id: 15, quantity: 1, piece_name: "Brick 1x2" },
     { part_id: "3068", color_id: 7, quantity: 1, piece_name: "Tile 2x2" },
-  ]
-};
+  ],
+  by_category: {},
+  by_color: {},
+  estimated_cost: 0,
+} satisfies ComponentProps<typeof InstructionBook>['pieceCount'];
 
 export default function MainLayout() {
   const [environmentActive, setEnvironmentActive] = useState(true);
